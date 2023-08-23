@@ -40,14 +40,14 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
-    padding: 0px 6%;
+    padding: 0px 20px;
     z-index: 99;
 }
 .nav-items-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: 80px;
     position: relative;
 }
 .brand-logo-outer{
@@ -84,6 +84,10 @@ body {
     text-transform: capitalize;
 }
 
+.nav-item-link.active {
+    color: #32B67A;
+}
+
 .nav-item.buy-ticket-btn .nav-item-link {
     background: #79F0B4;
     color: #000;
@@ -91,6 +95,11 @@ body {
     border-radius: 5px;
     border: 1px solid #79F0B4;
     transition: all .3s ease;
+    padding: 15px 20px;
+}
+
+.nav-item.buy-ticket-btn {
+    margin-left: 20px;
 }
 
 .nav-item.buy-ticket-btn .nav-item-link:hover{
@@ -153,7 +162,7 @@ body {
     /*fixed header*/
 .fixed-header .header-section {
     position: fixed;
-    background: #75f3b0;
+    background: #0E2829;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 100%;
     top: 0;
@@ -175,7 +184,7 @@ body {
 .home-slider-section {
     padding-top: 100px;
     padding-bottom: 60px;
-    background-image: url(../images/home-vector.png);
+    background-image: url(../images/Patern.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -269,8 +278,8 @@ body {
 
 /*About Section css start*/
 .about-section {
-    padding: 70px 0;
-    background-image: url(../images/Patern.svg);
+    padding: 100px 0;
+    background-image: url(../images/Patern1.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 20%;
@@ -332,8 +341,8 @@ body {
 
 /*Event section css start*/
 .event-section {
-    padding: 40px 0px;
-    background-image: url(../images/home-vector.png);
+    padding: 100px 0px;
+    background-image: url(../images/Mask.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -365,7 +374,7 @@ body {
 .event-section-title-outer {
     max-width: 850px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .event-section-title {
@@ -439,7 +448,7 @@ body {
 
 /*Company Logo section css start*/
 .company-logo-sectino {
-    padding: 70px 0px 40px;
+    padding: 100px 0px 40px;
 }
 
 .company-section-title-outer {
@@ -619,14 +628,17 @@ body {
 
 /*Subcrption section css start*/
 .subcription-section {
-    padding: 0px 0 164px;
+    padding: 0px 0 200px;    
 }
 
 .subcription-sec-wrapper {
     background: #0E2829;
-    padding: 45px 0;
+    padding: 52px 0;
     position: relative;
     border-radius: 20px;
+    background-image: url(../images/subcription.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .subcription-sec-title-outer {
@@ -641,6 +653,7 @@ body {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .subcription-sec-subtitle {
@@ -648,10 +661,11 @@ body {
     font-weight: 400;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 36px;
 }
 
 .subcription-form {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: 0px 4px 24px 0px #00000029;
 }
 
 .subcription-form-outer {
@@ -675,7 +689,7 @@ body {
     border: 1px solid #75f3b0;
     padding: 5px 30px;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
     transition: all .3s ease;
@@ -695,7 +709,8 @@ body {
 }
 
 .subcription-form-btn:hover {
-    background: transparent;
+    background: #0e2829;
+    color: #fff;
 }
 /*Subcrption section css End*/
 
@@ -703,7 +718,7 @@ body {
 .footer-section {
     padding: 60px 0px;
     background: #0e2829;
-    background-image: url(../images/Mask.png);
+    background-image: url(../images/footer.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -772,10 +787,10 @@ body {
     border-radius: 5px;
 }
 
-.footer-sign-up-form-btn:hover{
+/*.footer-sign-up-form-btn:hover{
     background: transparent;
     color: #75f3b0;
-}
+}*/
 
 .footer-item-outer .title {
     font-size: 18px;
