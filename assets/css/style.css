@@ -210,7 +210,7 @@ body {
     border-radius: 100%;
     transform: translate(-50%, -50%) rotate(1.4deg);
     top: 53%;
-    left: 50%;
+    left: 51%;
 }
 
 .slider-content-outer .slider-subtitle {
@@ -359,7 +359,36 @@ body {
     left: 50%;
 }
 
-.event-section-bg-shape-border {
+.event-section:before {
+        content: '';
+    width: 127%;
+    height: 38%;
+    background-color: #79F0B4;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom: 0;
+    position: absolute;
+    z-index: -11;
+    transform: translate(-50%, -50%) rotate(2.5deg);
+    top: 84%;
+    left: 44%;
+}
+.event-section:after {
+    content: '';
+    width: 127%;
+    height: 38%; /* as the half of the width */
+    background-color: #79F0B4;
+    border-top-left-radius: 100%;  /* 100px of height + 10px of border */
+    border-top-right-radius: 100%; /* 100px of height + 10px of border */
+    border-bottom: 0;
+    position: absolute;
+    z-index: -11;
+    transform: translate(-50%, -50%) rotate(2.5deg);
+    top: 16%;
+    left: 50%;
+}
+
+/*.event-section-bg-shape-border {
     position: absolute;
     height: 107%;
     width: 200%;
@@ -369,7 +398,7 @@ body {
     transform: translate(-50%, -50%) rotate(1.4deg);
     top: 51%;
     left: 50%;
-}
+}*/
 
 .event-section-title-outer {
     max-width: 850px;
@@ -407,7 +436,57 @@ body {
 
 .event-item-wrap {
     background: #fff;
-    border-radius: 25px;
+    border-radius: 16px;
+}
+
+.event-item-image {
+    position: relative;
+}
+
+.event-item-image img {
+    border-radius: 16px 16px 0 0;
+}
+
+.event-item-posi-cont {
+    position: absolute;
+    top: 16px;
+    background: #ffffffcc;
+    padding: 12px 16px;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.event-item-details-link {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #79F0B4;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.timer-items-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.timer-items-outer .timer-item {
+    color: #000000;
+    font-weight: 900;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.event-item-details-link a i {
+    font-size: 18px;
+    color: #212121;
 }
 
 .event-item-content-left {
@@ -769,7 +848,14 @@ body {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
-    color: #959595;
+    color: #fff;
+}
+
+.footer-sign-up-form input:focus {
+    background: transparent;
+    color: #fff;
+    box-shadow: none;
+    border: 1px solid #79f0b4;
 }
 
 .footer-sign-up-form-btn {
