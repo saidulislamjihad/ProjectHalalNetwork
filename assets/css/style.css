@@ -738,13 +738,13 @@ body {
 .footer-section-bg-shape-border {
     position: absolute;
     height: 95%;
-    width: 200%;
+    width: 150%;
     background: #79F0B4;
     z-index: -11;
     border-radius: 100%;
     transform: translate(-50%, -50%) rotate(2.5deg);
     top: 26%;
-    left: 50%;
+    left: 48%;
 }
 
 .footer-sign-up-form-text{
