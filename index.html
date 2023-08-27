@@ -177,7 +177,7 @@
 	<!-- Events -->
 	<section class="event-section position-relative">
 		<div class="event-section-bg-shape"></div>
-		<div class="event-section-bg-shape-border"></div>
+		<!-- <div class="event-section-bg-shape-border"></div> -->
 		<div class="event-section-title-outer">
 			<h1 class="event-section-title">
 				Laat je inspireren door het ondernemersavontuur van een gastspreker en verbind met andere ondernemers.
@@ -190,9 +190,34 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
 					<div class="event-item-wrap">
-						<a href="#" class="event-item-image">
-							<img src="assets/images/Top card.png" alt="Events">
-						</a>
+						<div class="event-item-image">
+							<img src="assets/images/Top card.jpeg" alt="Events">
+							<div class="event-item-posi-cont">
+								<div class="timer-items-outer">
+									<div class="timer-item">
+										<span class="countdown-number" id="days">00</span>
+										<span class="countdown-label">d</span>
+									</div>
+									<div class="timer-item">
+								      	<span class="countdown-number" id="hours">00</span>
+								      	<span class="countdown-label">h</span>
+								    </div>
+								    <div class="timer-item">
+								      	<span class="countdown-number" id="minutes">00</span>
+								      	<span class="countdown-label">m</span>
+								    </div>
+								    <div class="timer-item">
+								      	<span class="countdown-number" id="seconds">00</span>
+								      	<span class="countdown-label">s</span>
+								    </div>
+								</div>								
+							</div>
+							<div class="event-item-details-link">
+								<a href="#">
+									<i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
 						<div class="event-item-content-wrap">
 							<div class="event-item-content-left">
 								<p class="event-month">
@@ -207,7 +232,7 @@
 									Mannen event 
 								</a>
 								<p class="event-item-text">
-									Laat je inspireren door het ondernem ersavontuur
+									Laat je inspireren door het ondernem ersavontuur 
 								</p>
 							</div>
 						</div>
@@ -215,9 +240,19 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="event-item-wrap">
-						<a href="#" class="event-item-image">
-							<img src="assets/images/Top card (1).png" alt="Events">
-						</a>
+						<div class="event-item-image">
+							<img src="assets/images/Top card1.jpeg" alt="Events">
+							<div class="event-item-posi-cont">
+								<div class="timer-items-outer">
+									SOLD OUT!
+								</div>								
+							</div>
+							<div class="event-item-details-link">
+								<a href="#">
+									<i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
 						<div class="event-item-content-wrap">
 							<div class="event-item-content-left">
 								<p class="event-month">
@@ -240,9 +275,19 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="event-item-wrap">
-						<a href="#" class="event-item-image">
-							<img src="assets/images/Top card (2).png" alt="Events">
-						</a>
+						<div class="event-item-image">
+							<img src="assets/images/Top card2.jpeg" alt="Events">
+							<div class="event-item-posi-cont">
+								<div class="timer-items-outer">
+									COMING SOON
+								</div>								
+							</div>
+							<div class="event-item-details-link">
+								<a href="#">
+									<i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
 						<div class="event-item-content-wrap">
 							<div class="event-item-content-left">
 								<p class="event-month">
@@ -431,7 +476,7 @@
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<div class="footer-item-outer">
 						<a href="index.html" class="footer-brand-outer">
-				            <img class="brand" src="assets/images/Logo_light.png" alt="Logo">
+				            <img class="brand" src="assets/images/logo.svg" alt="Logo">
 				        </a>
 				        <p class="footer-sign-up-form-text">
 				        	Sign up to stay up to date
@@ -558,12 +603,31 @@
 <script src="assets/js/main.js"></script>
 <script type="text/javascript">
 	new WOW().init();
-	var typed = new Typed('.typed', {
-      strings: ['Doctor!', 'Hospital!'],
-      typeSpeed: 50,
-      loop: true,
-    });
+	// var typed = new Typed('.typed', {
+    //   strings: ['Doctor!', 'Hospital!'],
+    //   typeSpeed: 50,
+    //   loop: true,
+    // });
 
+	const targetDate = new Date("2023-12-31T23:59:59").getTime();
+
+	function updateCountdown() {
+	  const now = new Date().getTime();
+	  const timeLeft = targetDate - now;
+
+	  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+	  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+	  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+	  document.getElementById("days").textContent = days < 10 ? "0" + days : days;
+	  document.getElementById("hours").textContent = hours < 10 ? "0" + hours : hours;
+	  document.getElementById("minutes").textContent = minutes < 10 ? "0" + minutes : minutes;
+	  document.getElementById("seconds").textContent = seconds < 10 ? "0" + seconds : seconds;
+	}
+
+	updateCountdown();
+	setInterval(updateCountdown, 1000);
 </script>
 </body>
 </html>
