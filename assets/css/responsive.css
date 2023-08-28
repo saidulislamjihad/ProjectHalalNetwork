@@ -7,7 +7,7 @@
 	    position: fixed;
 	    right: -100%;
 	    top: 80px;
-	    padding-top: 30px;
+	    padding-top: 10px;
 	    display: block;
 	    width: 300px;
 	    height: 100vh;
@@ -26,6 +26,7 @@
 	    height: auto;
 	    display: block;
 	    border-bottom: 1px solid #f4f4f4;
+	    margin-left: 0;
 	}
 	.nav-item-submenu {
 	    position: unset;
@@ -35,16 +36,182 @@
 	    border-radius: unset;
 	    width: 100%;
 	}
+	.nav-item-link {
+	    color: #000;
+	    display: block;
+	}
+	.nav-item.buy-ticket-btn .nav-item-link {
+	    background: transparent;
+	    border: none;
+	}	
 }
 
 @media screen and (max-width: 991px){
-		
+	.slider-content-outer {
+	    margin-bottom: 40px;
+	}
+	.about-section {
+	    background-image: none;
+	}
+
+	.section-bg-shape {
+	    border-radius: 0 0 50% 80%;
+	}
+	.home-slider-section:after {
+	    bottom: 0%;
+	    transform: translateX(-50%) rotate(10deg);
+	    height: 45%;
+	}
+	.event-section:before {
+		transform: translateX(-50%) rotate(2deg);
+		top: -23px;
+		height: 20%;
+	}
+	.event-section-bg-shape {
+	    width: 350%;
+	}
+	.event-section:after {
+		transform: translateX(-50%) rotate(2deg);
+		bottom: -23px;
+		height: 20%;
+	}
+	.footer-item-outer {
+	    margin-bottom: 40px;
+	}
+	.footer-section:before {
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-position: center;
+	}
+	.footer-section-bg-shape {
+	    top: 38%;
+	    border-radius: 0% 37% 0% 0%;
+	}
+	.footer-section-bg-shape-border {
+	    transform: translate(-50%, -50%) rotate(2deg);
+	    top: 33%;
+	    border-radius: 0% 30%;
+	}	
 }
 
 @media screen and (max-width: 767px){
-	
+	.testimonial-item-left {
+	    margin: auto;
+	}
+	.subcription-form-outer {
+	    max-width: 400px!important;
+	}
+	.company-logo-items-wrapper{
+		text-align: center;
+	}
 }
 
-@media screen and (max-width: 620px){
-	
+@media screen and (max-width: 576px){
+	.slider-content-outer .slider-title {
+	    font-size: 20px;
+	}
+	.slider-content-outer .slider-text {
+	    font-size: 14px;
+	}
+	.section-bg-shape {
+	    border-radius: 0% 0% 0% 65%;
+	}
+	.home-slider-section:after {
+	    transform: translateX(-50%) rotate(16deg);
+	    height: 27%;
+	    bottom: 11px;
+	}
+	.about-section-title {
+	    font-size: 20px;
+	}
+	.event-section:before {
+	    transform: translateX(-50%) rotate(2deg);
+	    top: -11px;
+	    height: 2%;
+	}
+	.event-section-bg-shape {
+	    width: 500%;
+	}
+	.event-section:after {
+	    transform: translateX(-50%) rotate(2deg);
+	    bottom: -10px;
+	    height: 2%;
+	}
+	.footer-section-bg-shape {
+	    top: 50%;
+	    border-radius: 0% 27% 0% 0%;
+	}
+	.footer-section-bg-shape-border {
+	    transform: translate(-50%, -50%) rotate(2deg);
+	    top: 45%;
+	    border-radius: 0% 25%;
+	}
+	.event-section-title {
+	    font-size: 20px;
+	}
+	.event-section-subtitle {
+	    font-size: 14px;
+	}
+	.event-section-title-outer {
+	    max-width: 500px;
+	    padding: 0 15px;
+	}
+	.event-section-subtitle {
+	    max-width: 500px;
+	    padding: 0 15px;
+	}
+	.company-section-title-outer {
+	    max-width: 500px;
+	    padding: 0 15px;
+	}
+	.testimonial-item-title {
+	    font-size: 20px;
+	}
+	.testimonial-section {
+	    padding-left: 0;
+	}
+	.testimonial-item-left {
+	    padding: 0 20px;
+	}
+	.subcription-sec-title {
+	    font-size: 20px;
+	}
+	.subcription-sec-subtitle {
+	    font-size: 14px;
+	    margin-bottom: 30px;
+	}
+	.testimonial-item-text {
+	    font-size: 14px;
+	    line-height: 24px;
+	}
+	.company-section-title {
+	    font-size: 20px;
+	}
+	.company-section-subtitle {
+	    font-size: 14px;
+	}
+	.about-section-title-outer {
+	    padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.subcription-form-outer {
+	    max-width: 329px!important;
+	}
+	.footer-section-bg-shape {
+	    top: 50%;
+	    border-radius: 0% 18% 0% 0%;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.home-slider-section:after {
+	    transform: translateX(-50%) rotate(19deg);
+	    height: 26%;
+	    bottom: 11px;
+	}
+	.subcription-form-outer {
+	    max-width: 290px!important;
+	}
 }

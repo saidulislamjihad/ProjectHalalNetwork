@@ -32,7 +32,7 @@ html{
 }
 body {
     width: 100%;
-    max-width: 1920px;
+    max-width: 2100px;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -75,7 +75,7 @@ body {
   margin-bottom: 0;
   padding-left: 0px;
 }
-.nav-item:hover .nav-item-link {
+.nav-item .nav-item-link:hover  {
   color: #32B67A;
 }
 .nav-item-link {
@@ -85,6 +85,7 @@ body {
     padding: 10px 17px;
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
+    display: inline-block;
 }
 
 .nav-item-link.active {
@@ -94,7 +95,8 @@ body {
 .nav-item.buy-ticket-btn .nav-item-link {
     background: #79F0B4;
     color: #000;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 16px;
     border-radius: 5px;
     border: 1px solid #79F0B4;
     transition: all .3s ease;
@@ -169,7 +171,7 @@ body {
 /*Home Slider css Start*/
 .home-slider-section {
     padding-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     background-image: url(../images/Patern.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,7 +215,7 @@ body {
 }
 
 .slider-content-outer .slider-subtitle {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #77f2b5;
     font-family: 'Roboto', sans-serif;
@@ -223,11 +225,11 @@ body {
 }
 
 .slider-content-outer .slider-title {
-    font-size: 34px;
+    font-size: 32px;
     color: #fff;
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .slider-content-outer .slider-text {
@@ -235,6 +237,7 @@ body {
     font-weight: 400;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 24px;
 }
 
 .but-ticket-btn-inner {
@@ -242,7 +245,7 @@ body {
     background: #79F0B4;
     color: #000;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
     padding: 8px 12px;
@@ -261,7 +264,7 @@ body {
     background: transparent;
     color: #79F0B4;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
     padding: 8px 12px;
@@ -294,14 +297,15 @@ body {
     font-size: 32px;
     text-align: center;
     color: #153F41;
-    font-weight: 600;
+    font-weight: 900;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 32px;
 }
 
 .about-item-outer {
     max-width: 300px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .about-item-inner .item-image {
@@ -409,7 +413,7 @@ body {
     font-size: 32px;
     text-align: center;
     color: #fff;
-    font-weight: 600;
+    font-weight: 900;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -424,7 +428,7 @@ body {
 }
 
 .event-section .container {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .event-item-content-wrap {
@@ -436,6 +440,7 @@ body {
 .event-item-wrap {
     background: #fff;
     border-radius: 16px;
+    margin-bottom: 16px;
 }
 
 .event-item-image {
@@ -495,15 +500,15 @@ body {
 .event-item-content-left .event-month {
     margin-bottom: 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     color: #32B67A;
-    font-weight: 600;
+    font-weight: 900;
     font-family: 'Roboto', sans-serif;
 }
 
 .event-item-content-left .event-date {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 800;
     color: #000;
     margin-bottom: 10px;
 }
@@ -539,7 +544,7 @@ body {
     font-size: 32px;
     text-align: center;
     color: #000;
-    font-weight: 600;
+    font-weight: 900;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -594,7 +599,7 @@ body {
     background: #79F0B4;
     color: #000;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
     padding: 8px 12px;
@@ -611,6 +616,7 @@ body {
 /*Testimonial section css start*/
 .testimonial-section {
     padding-bottom: 50px;
+    padding-left: 32px;
 }
 
 .testimonial-item-outer {
@@ -624,7 +630,7 @@ body {
 
 .testimonial-item-top-title {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 900;
     color: #79F0B4;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5px;
@@ -632,7 +638,7 @@ body {
 
 .testimonial-item-title {
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 900;
     color: #153F41;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
@@ -727,7 +733,7 @@ body {
 
 .subcription-sec-title {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 900;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -767,7 +773,7 @@ body {
     border: 1px solid #75f3b0;
     padding: 5px 30px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
     transition: all .3s ease;
@@ -866,9 +872,9 @@ footer.footer-section:before {
     transform: translateY(-50%);
     background: #75f3b0;
     border: 1px solid #75f3b0;
-    padding: 1px 10px;
+    padding: 2px 8px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     color: #0E2829;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
@@ -880,10 +886,10 @@ footer.footer-section:before {
 }*/
 
 .footer-item-outer .title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .footer-brand-outer {
