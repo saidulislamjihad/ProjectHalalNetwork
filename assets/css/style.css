@@ -27,9 +27,12 @@ img {
 a:hover {
     text-decoration: none;
 }
-
+html{
+    overflow-x: hidden;
+}
 body {
     width: 100%;
+    max-width: 1920px;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -171,7 +174,20 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.home-slider-section:after {
+    content: '';
+    width: 140%;
+    height: 38%;
+    background-color: #79F0B4;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom: 0;
+    position: absolute;
+    z-index: -11;
+    transform: translateX(-50%) rotate(1.9deg);
+    bottom: -2.2%;
+    left: 50%;
+}
 .section-bg-shape {
     position: absolute;
     height: 100%;
@@ -265,7 +281,7 @@ body {
     background-image: url(../images/Patern1.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: 20%;
+    background-position-y: 38%;
 }
 
 .about-section-title-outer {
@@ -337,14 +353,28 @@ body {
     background: #0E2829;
     z-index: -1;
     border-radius: 100%;
-    transform: translate(-52%, -50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
 }
 
 .event-section:before {
-        content: '';
-    width: 127%;
+    content: '';
+    width: 140%;
+    height: 38%;
+    background-color: #79F0B4;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom: 0;
+    position: absolute;
+    z-index: -11;
+    transform: translateX(-50%) rotate(1.9deg);
+    top: -1.7%;
+    left: 50%;
+}
+.event-section:after {
+    content: '';
+    width: 140%;
     height: 38%;
     background-color: #79F0B4;
     border-bottom-left-radius: 100%;
@@ -352,22 +382,8 @@ body {
     border-bottom: 0;
     position: absolute;
     z-index: -11;
-    transform: translate(-50%, -50%) rotate(2.5deg);
-    top: 84%;
-    left: 44%;
-}
-.event-section:after {
-    content: '';
-    width: 127%;
-    height: 38%; /* as the half of the width */
-    background-color: #79F0B4;
-    border-top-left-radius: 100%;  /* 100px of height + 10px of border */
-    border-top-right-radius: 100%; /* 100px of height + 10px of border */
-    border-bottom: 0;
-    position: absolute;
-    z-index: -11;
-    transform: translate(-50%, -50%) rotate(2.5deg);
-    top: 16%;
+    transform: translateX(-50%) rotate(1.9deg);
+    bottom: -1.5%;
     left: 50%;
 }
 
@@ -777,20 +793,30 @@ body {
 /*Subcrption section css End*/
 
 /*Footer section css start*/
-.footer-section {
-    padding: 60px 0px;
-    background: #0e2829;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
+.footer-section {
+    padding: 80px 0px;
+    background: #0e2829;
+    /* background-image: url(../images/footer.svg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    z-index: 1;
+}
+footer.footer-section:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -25%;
+    background-image: url(../images/footer.svg);
+    height: 125%;
+    width: 100%;
+}
 .footer-section-bg-shape {
     position: absolute;
     height: 100%;
     width: 148%;
     background: #0E2829;
-    z-index: -1;
+    z-index: -2;
     border-radius: 100% 100% 0 0%;
     transform: translate(-39%, -50%);
     top: 33%;
@@ -800,13 +826,13 @@ body {
 .footer-section-bg-shape-border {
     position: absolute;
     height: 95%;
-    width: 200%;
+    width: 150%;
     background: #79F0B4;
-    z-index: -11;
+    z-index: -3;
     border-radius: 100%;
-    transform: translate(-50%, -50%) rotate(2.5deg);
-    top: 26%;
-    left: 50%;
+    transform: translate(-50%, -50%) rotate(2.8deg);
+    top: 26.5%;
+    left: 48%;
 }
 
 .footer-sign-up-form-text{
@@ -831,16 +857,8 @@ body {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: #959595;
 }
-
-.footer-sign-up-form input:focus {
-    background: transparent;
-    color: #fff;
-    box-shadow: none;
-    border: 1px solid #79f0b4;
-}
-
 .footer-sign-up-form-btn {
     position: absolute;
     top: 50%;
@@ -890,7 +908,7 @@ body {
 
 .footer-list-item-link {
     display: block;
-    color: #b2b3cf;
+    color: #9E9E9E;
     font-size: 16px;
     font-weight: 400;
     transition: all .3s ease-in-out;
